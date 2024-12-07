@@ -13,5 +13,5 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Run tests during the image build process
-RUN npm test
+# Define the command to run tests when the container runs
+CMD ["npm", "test"]
